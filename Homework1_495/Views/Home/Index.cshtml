@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "QR Code Reader";
+}
+
+<h2>QR Code Generator</h2>
+
+<p>Gives the QR code in a new tab!</p>
+
+
+<form method="POST" target="_blank">
+
+    <select name="Color1" id="QRColor1">
+        <option value="#000000">Black</option>
+        <option value="#FFFFFF">White</option>
+        <option value="#FF0000">Red</option>
+        <option value="#0000FF">Blue</option>
+        <option value="#008000">Green</option>
+    </select>
+
+    <select name="Color2" id="QRColor2">
+        <option value="#FFFFFF">White</option>
+        <option value="#000000">Black</option>
+        <option value="#FF0000">Red</option>
+        <option value="#0000FF">Blue</option>
+        <option value="#008000">Green</option>
+    </select>
+
+    <input type="text" value="Enter Text Here" name="InputText" id="QRInputText" style="width:158px;margin-bottom: 0px; margin-left: 47px;" />
+    <input name="answer" type="submit" value="Submit" id="GenerateQRButton" />
+</form>
+
+<h2>QR Code Reader</h2>
+
+<p>Reads the QR code and outputs the text in this tab.</p>
+
+@model UploadImageTest
+<form asp-action="Index" enctype="multipart/form-data">
+
+    <input asp-for="UploadedImage" />
+
+    <input name="answer" type="submit" value="Upload" />
+</form>
+
+
+
