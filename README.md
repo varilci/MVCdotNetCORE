@@ -1,2 +1,2 @@
 # MVCdotNetCORE
-A web application developed with .NET CORE. Able to read and create QR code.
+A web application developed with .NET CORE, MVC. Able to read and create QR code. Can be hosted on Azure.
